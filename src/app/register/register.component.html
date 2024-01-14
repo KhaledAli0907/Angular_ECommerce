@@ -1,0 +1,92 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="name"
+    />
+    @if (registerForm.controls['name'].invalid &&
+    registerForm.controls['name'].touched) {
+    <span>Please enter a valid Name</span>
+    }
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="email"
+    />
+    @if (registerForm.controls['email'].invalid &&
+    registerForm.controls['email'].touched) {
+    <span>Please enter a valid Email</span>
+    }
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">User Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="userName"
+    />
+    @if (registerForm.controls['userName'].invalid &&
+    registerForm.controls['userName'].touched) {
+    <span>Please enter a valid userName</span>
+    }
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="password"
+    />
+    @if (registerForm.controls['password'].invalid &&
+    registerForm.controls['password'].touched) {
+    <span>Please enter a valid password</span>
+    }
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Confirm Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="rePassword"
+    />
+    @if (registerForm.controls['rePassword'].invalid &&
+    registerForm.controls['rePassword'].touched) {
+    <span>Passwords doesn't match</span>
+    }
+  </div>
+  <button
+    type="submit"
+    [disabled]="!registerForm.valid"
+    style="background-color: green; color: white"
+  >
+    Register
+  </button>
+</form>
+<br />
+
+<hr />
+<hr />
+<hr />
+<hr />
+
+<div class="d-flex justify-content-center align-items-center">
+  <p>
+    Already have an account!
+    <a routerLink="../login">Login</a>
+  </p>
+</div>

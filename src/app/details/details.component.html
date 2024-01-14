@@ -1,0 +1,35 @@
+<div class="div">
+  <div class="card mb-3"  style="width: 100%;" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          [src]="productItem.images[0]"
+          class="img-fluid rounded-start"
+          style="width: 100%;   border-radius: 15px;"
+        />
+      </div>
+       <div class="col-md-8 col-lg-6 col-xl-8 mt-1 mb-4 text-danger">
+    <div class="d-flex flex-row justify-content-end" style="margin-top: 3%;">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+  </div>
+      <div class="col-md-8" style="margin-top: -10%;">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bolder ">{{ productItem.title }}</h5>
+          <p class="card-text ">
+            {{ productItem.description }}
+          </p>
+        </div>
+      </div>
+    </div> 
+  </div>
+ 
+  <div class="d-flex justify-content-center">
+    <button type="button" class="btn-secondary " 
+    style="color: red; background-color: transparent;padding: 10px 15px 10px 15px ; ">Add to cart</button>
+  </div>
+  
+</div>

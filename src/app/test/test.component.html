@@ -1,0 +1,55 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="name"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="email"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">User Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="userName"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="password"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Confirm Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="rePassword"
+    />
+  </div>
+  <button type="submit" [disabled]="!registerForm.valid">Register</button>
+</form>
+
+<p>it works!</p>

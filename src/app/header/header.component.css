@@ -1,0 +1,10 @@
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+nav {
+  /* border: 1px solid gray; */
+  background-color: gainsboro;
+}
+
+.active_link {
+  color: orangered;
+}

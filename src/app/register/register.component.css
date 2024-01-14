@@ -1,0 +1,16 @@
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.form-control {
+  border: 1px solid gainsboro;
+}
+
+#formTable {
+  border: 1px solid gainsboro;
+  padding: 50px;
+  /* width: 30%; */
+}
+
+#submitButton {
+  width: 100%;
+}
+

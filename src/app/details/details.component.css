@@ -1,0 +1,11 @@
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+.div {
+    height: auto;
+    width: 45vw;
+    background-color: #fff;
+  margin-left: 23%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    padding:2%;
+    
+}
